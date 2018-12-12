@@ -1,40 +1,385 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>MIEX</title>
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700|Montserrat:400,700|Open+Sans:300,300i,400,700,700i" rel="stylesheet">
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Magnific Popup-->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Timeline -->
+		<link rel="stylesheet" href="css/timeline.css">
+		<!-- Animated Headline -->
+		<link rel="stylesheet" href="css/animated-headline.css">
+		<!-- Opup Contact -->
+		<link rel="stylesheet" href="css/contact-popup.css">
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="css/main-style.css">
+
+		<!-- Modernizr JS -->
+		<script src="js/modernizr.js"></script>
+
+
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+	<!-- preloader -->
+	<div class="preloader-container">
+		<div class="la-ball-triangle-path la-2x">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div id="template-page">
+		<nav class="template-nav-style-1" data-offcanvass-position="template-offcanvass-left">
+			<div class="container">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 template-logo">
+					<a href="#" class="js-template-mobile-toggle template-nav-toggle"><i></i></a>
+					<a href="#">MIEX</a>
+				</div>
+				<div class="col-lg-6 col-md-5 col-sm-5 text-center template-link-wrap">
+					<ul data-offcanvass="yes">
+						<li class="active"><a href="#about">About</a></li>
+						<li><a href="#projects">EXR</a></li>
+						<li><a href="#story">About Us</a></li>
+						<li><a href="#pricing">Products</a></li>
+						<li><a href="#contact">Career</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 text-right template-link-wrap">
+					<ul class="template-special" data-offcanvass="yes">
+						<li><a href="#">Institution Registration</a></li>
+						<li><a href="#" class="call-to-action">Sign in</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="template-cover template-cover-style-2 js-full-height section-class-scroll" data-stellar-background-ratio="0.5" data-next="yes"  style="background-image: url(images/full_1.jpg);">
+		  	<span class="scroll-btn wow" data-wow-duration="1s" data-wow-delay="1.4s">
+				<a href="#">
+					<span class="mouse"><span></span></span>
+				</a>
+			</span>
+			<div class="template-overlay"></div>
+			<div class="template-cover-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-push-6 col-md-push-4 col-sm-push-0 col-md-6 full-height js-full-height">
+							<div class="template-cover-intro">
+
+								<h2 class="cd-headline hero-headline letters rotate-3">
+									<span class="cd-words-wrapper"><b class="is-visible">Modernizing </b><b>Traditions</b></span>
+								</h2>
+
+
+								<h2 class="cover-text-sublead wow" data-wow-duration="1s" data-wow-delay=".8s">Mega Inter Exchange (MIEX) is a state-of-the-art, legally legitimate financial ecosystem with maximum security and efficiency for cryptocurrency trading and settlement
+</h2>
+								<p class="wow" data-wow-duration="1s" data-wow-delay="1.1s"><a href="#projects" class="btn btn-primary btn-outline btn-lg">Join the Crypto Neoteric</a></p>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+
+		<div class="price-watcher">
+			<div class="row">
+			<div id="BTCEXRPrice" class="col-md-4 text-center">
+				<div class="price-text">
+					<div class="price-currency-sm">
+						BTC / EXR
+					</div>
+					<div class="priceChange-up">
+							+17.78%
+					</div>
+					<div class="price">
+						4012.34 EXR
+					</div>
+					<!-- <div class="summarychart">
+					</div> -->
+				</div>
+			</div>
+			<div id="ETHEXRPrice" class="col-md-4 text-center price-graph">
+				<div class="price-text">
+					<div class="price-currency-sm">
+						ETH / EXR
+					</div>
+					<div class="priceChange-down">
+							-7.78%
+					</div>
+					<div class="price">
+						4012.34 EXR
+					</div>
+					<!-- <div class="summarychart">
+					</div> -->
+				</div>
+			</div>
+			<div id="XRPEXRPrice" class="col-md-4 text-center price-graph">
+				<div class="price-text">
+					<div class="price-currency-sm">
+						XRP / EXR
+					</div>
+					<div class="priceChange-up">
+							+6.78%
+					</div>
+					<div class="price">
+						4012.34 EXR
+					</div>
+					<!-- <div class="summarychart">
+					</div> -->
+				</div>
+			</div>
+			</div>
+		</div>
+
+
+		<div class="template-blog-style-1 section-class-scroll">
+			<div class="container">
+
+				<div class="row p-b text-center">
+					<h2 class="template-heading wow" data-wow-duration="1s" data-wow-delay=".5s">News Hightlight</h2>
+
+					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+						<div class="template-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".1s">
+							<div class="template-post-image">
+								<div class="template-overlay"></div>
+									<div class="template-category"><a href="#">EXR</a></div>
+								<img src="images/img_same_dimension_2.jpg" alt="Image" class="img-responsive">
+							</div>
+							<div class="template-post-text">
+								<h3><a href="#">Singapore Government Agency Backs New Blockchain Accelerator</a></h3>
+								<p>Enterprise Singapore, a government agency set up to develop the startup ecosystem, is supporting a new blockchain accelerator program.</p>
+							</div>
+							<div class="template-post-meta">
+								<a href="#"><i class="icon-chat"></i> 33</a>
+								<a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+						<div class="template-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".3s">
+							<div class="template-post-image">
+								<div class="template-overlay"></div>
+								<div class="template-category"><a href="#">Blockchain</a></div>
+								<img src="images/img_same_dimension_3.jpg" alt="Image" class="img-responsive">
+							</div>
+							<div class="template-post-text">
+								<h3><a href="#">Chinese Crypto Billionaire to Help Lead Hong-Kong-Listed Blockchain Firm</a></h3>
+									<p>Veteran Chinese crypto investor Li Xiaolai has joined a blockchain firm listed on the Hong Kong Stock Exchange as an executive director and co-CEO.</p>
+							</div>
+							<div class="template-post-meta">
+								<a href="#"><i class="icon-chat"></i> 33</a>
+								<a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+						<div class="template-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".5s">
+							<div class="template-post-image">
+								<div class="template-overlay"></div>
+								<div class="template-category"><a href="#">Categories</a></div>
+								<img src="images/img_same_dimension_4.jpg" alt="Image" class="img-responsive">
+							</div>
+							<div class="template-post-text">
+								<h3><a href="#">US Government Interested in Tracking Privacy Coins, New Document Shows</a></h3>
+								<p>The U.S. Department of Homeland Security wants to find out if it's feasible to track transactions conducted using privacy coins.</p>
+							</div>
+							<div class="template-post-meta">
+								<a href="#"><i class="icon-chat"></i> 33</a>
+								<a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				</div>
+				<div class="row">
+					<div class="btn-padding">
+						<div class="col-md-4 col-md-offset-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+							<a href="#" class="btn btn-primary btn-lg">View All Post</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="root">a</div>
+		    <script src="static/bundle.js"></script>
+
+
+			</div>
+		</div>
+		</div>
+	</div>
+
+<div class="row wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".7s">
+		<h3 class="text-lg-center text-center">
+			To learn more about MIEX and EXR, please contact us today
+		</h3>
+
+		<div class="btn-padding">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<a href="#" class="btn btn-primary btn-lg">JOIN US</a>
+			</div>
+		</div>
+
+</div>
+
+
+
+
+		<div id="contact" class="template-footer-style-3 section-class-scroll">
+			<div class="container">
+				<div class="row p-b">
+					<div class="col-md-3 col-sm-6 template-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+						<div class="template-logo"><span class="logo">MIEX</span> </div>
+					</div>
+					<div class="col-md-3 col-sm-6 template-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+						<h3>Company</h3>
+						<ul class="template-links">
+							<li><a href="#">How it Works</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-3 col-sm-6 template-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+						<h3>Connect</h3>
+						<ul class="template-links template-social">
+							<li><a href="#"><i class="icon icon-facebook2"></i> Facebook</a></li>
+							<li><a href="#"><i class="icon icon-twitter"></i> Twitter</a></li>
+							<li><a href="#"><i class="icon icon-dribbble"></i> Dribbble</a></li>
+							<li><a href="#"><i class="icon icon-instagram"></i> Instagram</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 template-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+						<h3>About</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						<p class="cd-item">
+							<a href="#0" class="cd-trigger cta cta-stroke btn btn-success btn-sm btn-outline">Contact Us</a>
+						</p>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				</div>
+				<div class="row template-made">
+					<div class="col-md-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+						<p>&copy; 2018 MIEX. All Rights Reserved. <i class="heart icon-heart"></i> in Kurdistan</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END footer -->
+
+	</div>
+	<!-- END page-->
+
+	<!-- cd-quick-view -->
+	<div class="cd-quick-view">
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.260740061601!2d34.566047051606795!3d36.78829837596946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1527f4cec1a085d7%3A0x9f92f05107cba11b!2sMente%C5%9F%2C+2597.+Sk.+No%3A5%2C+33150+Yeni%C5%9Fehir%2FMersin!5e0!3m2!1str!2str!4v1470658683730" width="450" height="450" ></iframe>
+			</ul> <!-- cd-slider -->
+		</div> <!-- cd-slider-wrapper -->
+
+		<div class="cd-item-info">
+			<h2>Our Contact Details</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+			<h2>Contact Us</h2>
+			<ul class="cd-item-action">
+				<li><i class="icon icon-location"></i>Lorem ipsum dolor sit amet</li>
+				<li><i class="icon icon-hour-glass"></i>Lorem ipsum dolor sit amet</li>
+				<li><i class="icon icon-phone"></i>Lorem ipsum dolor sit amet</li>
+			</ul> <!-- cd-item-action -->
+		</div> <!-- cd-item-info -->
+		<a href="#0" class="cd-close">Close</a>
+	</div> <!-- cd-quick-view -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+   <script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/timeline.js"></script>
+	<!-- WOW -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script>
+		new WOW().init();
+	</script>
+
+	<!-- animated headline -->
+	<script src="js/animated-headline.js"></script>
+	<!-- velocity -->
+	<script src="js/velocity.min.js"></script>
+	<!-- popup contact -->
+	<script src="js/contact-popup.js"></script>
+	<!-- Main -->
+	<script src="js/main-settings.js"></script>
+	<!--Expandable-->
+	<script>
+
+  </script>
+
+	</body>
 </html>
